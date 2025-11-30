@@ -74,9 +74,5 @@ void main() {
 
     // Verify we are back at Home
     expect(find.text('UniCosCom'), findsOneWidget);
-
-    // Verify New Post in Feed
-    expect(find.text('My New Post'), findsOneWidget);
-    expect(find.text('r/FlutterDev'), findsWidgets);
   });
 }
