@@ -1,16 +1,41 @@
-# flutter_web_app
+# UniCosCom
 
-A new Flutter project.
+UniCosCom is a modern social community platform built with Flutter for the Web. It features a beautiful glassmorphism design and interactive elements.
+
+## Features
+
+- **Modern UI**: "Liquid Glass" design with glassmorphism effects and gradient backgrounds.
+- **Theme Switching**: Toggle between Light and Dark modes with dynamic background changes.
+- **Community Management**:
+  - Create new communities.
+  - View community details and filtered post feeds.
+- **Post Interaction**:
+  - Create posts with titles and content.
+  - Upvote/Downvote posts.
+  - View post details and comments.
+  - Add mock comments.
+- **Responsive Navigation**:
+  - Drawer menu for easy access to Settings, Create Community, and Create Post.
+  - Seamless navigation between feeds, details, and community pages.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To run this project locally:
 
-A few resources to get you started if this is your first Flutter project:
+1.  Ensure you have [Flutter](https://flutter.dev/docs/get-started/install) installed.
+2.  Clone the repository.
+3.  Run the following command in the project directory:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+flutter run -d chrome
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Technologies
+
+- **Flutter**: UI Toolkit.
+- **Dart**: Programming Language.
+- **Provider/ValueNotifier**: State Management (Simple).
+
+## Note
+
+This project currently uses `MockData` for demonstration purposes. Data is not persisted across sessions.
