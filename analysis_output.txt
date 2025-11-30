@@ -1,0 +1,16 @@
+Analyzing Flutter Web App...                                    
+
+   info - Use 'const' with the constructor to improve performance - lib\create_community_page.dart:21:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\create_community_page.dart:22:19 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\create_community_page.dart:25:19 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\create_post_page.dart:22:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\create_post_page.dart:23:19 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\create_post_page.dart:26:19 - prefer_const_literals_to_create_immutables
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\glass_container.dart:31:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\glass_container.dart:36:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\glass_container.dart:53:32 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\glass_container.dart:54:32 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\main.dart:46:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\main.dart:47:19 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\main.dart:50:19 - prefer_const_literals_to_create_immutables
+
