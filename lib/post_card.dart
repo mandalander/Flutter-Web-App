@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web_app/models.dart';
 import 'package:flutter_web_app/mock_data.dart';
 import 'package:flutter_web_app/glass_container.dart';
+import 'package:flutter_web_app/post_details_page.dart';
+import 'package:flutter_web_app/community_page.dart';
 
 class PostCard extends StatefulWidget {
   final Post post;
@@ -47,11 +49,22 @@ class _PostCardState extends State<PostCard> {
         children: [
           Row(
             children: [
-              Text(
-                'r/${community.name}',
-                style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                      fontWeight: FontWeight.bold,
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => CommunityPage(community: community),
                     ),
+                  );
+                },
+                child: Text(
+                  'r/${community.name}',
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline,
+                      ),
+                ),
               ),
               const SizedBox(width: 8.0),
               Text(
@@ -91,9 +104,23 @@ class _PostCardState extends State<PostCard> {
                 constraints: const BoxConstraints(),
               ),
               const SizedBox(width: 16),
-              const Icon(Icons.comment, size: 20),
-              const SizedBox(width: 4),
-              const Text('Comments'),
+              InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => PostDetailsPage(post: _post),
+                    ),
+                  );
+                },
+                child: const Row(
+                  children: [
+                    Icon(Icons.comment, size: 20),
+                    SizedBox(width: 4),
+                    Text('Comments'),
+                  ],
+                ),
+              ),
             ],
           ),
         ],

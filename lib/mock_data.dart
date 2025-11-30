@@ -66,8 +66,36 @@ class MockData {
     ),
   ];
 
+  static final List<Comment> comments = [
+    Comment(
+      id: '1',
+      postId: '1',
+      author: 'dev_one',
+      content: 'This is amazing news! Can\'t wait to try it on Linux.',
+      timestamp: DateTime.now().subtract(const Duration(minutes: 30)),
+    ),
+    Comment(
+      id: '2',
+      postId: '1',
+      author: 'linux_user',
+      content: 'Finally! Native Linux support.',
+      timestamp: DateTime.now().subtract(const Duration(minutes: 15)),
+    ),
+    Comment(
+      id: '3',
+      postId: '4',
+      author: 'riverpod_fan',
+      content: 'Riverpod all the way!',
+      timestamp: DateTime.now().subtract(const Duration(hours: 1)),
+    ),
+  ];
+
   static List<Post> getPosts() {
     return posts;
+  }
+
+  static List<Post> getPostsByCommunity(String communityId) {
+    return posts.where((p) => p.communityId == communityId).toList();
   }
 
   static void addPost(Post post) {
@@ -89,5 +117,13 @@ class MockData {
     if (index != -1) {
       posts[index] = updatedPost;
     }
+  }
+
+  static List<Comment> getCommentsForPost(String postId) {
+    return comments.where((c) => c.postId == postId).toList();
+  }
+
+  static void addComment(Comment comment) {
+    comments.add(comment);
   }
 }
