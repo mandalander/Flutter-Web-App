@@ -21,13 +21,14 @@ class GradientBackground extends StatelessWidget {
               end: Alignment.bottomRight,
               colors: themeMode == ThemeMode.dark
                   ? const [
-                      Color(0xFF667eea),
-                      Color(0xFF764ba2),
-                      Color(0xFFf093fb),
+                      Color(0xFF0f0c29), // Very dark blue-purple
+                      Color(0xFF1a1443), // Deep purple
+                      Color(0xFF24243e), // Dark slate
                     ]
                   : const [
-                      Color(0xFF89f7fe),
-                      Color(0xFF66a6ff),
+                      Color(0xFFf5f7fa), // Very light gray-blue
+                      Color(0xFFe8f0fe), // Light blue tint
+                      Color(0xFFffffff), // Pure white
                     ],
             ),
           ),
